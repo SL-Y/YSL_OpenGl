@@ -29,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
         glSurfaceView.setEGLContextClientVersion(2);
         glSurfaceView.setRenderer(new GLRenderer(this));
         glSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
+        //5
         //4
+        //1
     }
 
     public class GLRenderer implements GLSurfaceView.Renderer {
