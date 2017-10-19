@@ -16,6 +16,8 @@ import javax.microedition.khronos.opengles.GL10;
 
 import Util.ShaderUtils;
 
+import static android.R.attr.width;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -28,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
         glSurfaceView.setRenderer(new GLRenderer(this));
         glSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
         //1
-        //2
-        //3
     }
 
     public class GLRenderer implements GLSurfaceView.Renderer {
@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
         /**
          * 每当屏幕尺寸发生变化
          * @param gl10
-         * @param
-         * @param
+         * @param i
+         * @param i1
          */
         @Override
         public void onSurfaceChanged(GL10 gl10, int width, int height) {
